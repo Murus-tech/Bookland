@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>L'universo dei libri scontati fino al 50% | BOOKLAND</title>
+    <meta name="description" content=" L'universo dei libri scontati fino al 50% ">
+
+    <link rel="canonical" href="">
+    <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0857caa2-d6ba-4b9f-af35-376bb1ab6350";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest?v=ngJl4GXbK9">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#ff0000">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <style>
+        .stop-scroll {
+            height: 100%;
+            overflow: hidden
+        }
+
+        .mediabox-wrap {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 999;
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: mediabox;
+            animation-name: mediabox
+        }
+
+        @-webkit-keyframes mediabox {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        @keyframes mediabox {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        .mediabox-content {
+            max-width: 853px;
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            position: relative
+        }
+
+        .mediabox-content iframe {
+            max-width: 100% !important;
+            width: 100% !important;
+            display: block !important;
+            height: 480px !important;
+            border: none !important;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0
+        }
+
+        .mediabox-hide {
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: mediaboxhide;
+            animation-name: mediaboxhide
+        }
+
+        @-webkit-keyframes mediaboxhide {
+            0% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes mediaboxhide {
+            0% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        .mediabox-close {
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            bottom: 528px;
+            right: 0;
+            margin: auto 0;
+            width: 24px;
+            height: 24px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAMvSURBVHja7Js9aBRBFMd/d1lPY6FiJVjY+Fkoxl7wA1Q0prQRS6tgoZV2MWIRRVHUUq3U+JnESrS2sBXBzipREWMlATXwt8gFznC5nd15M7Nn8uC45nZnfr/dY96+N1uTxFKOOks8lgUU/H2t4tJqIQUcAiaBGeBymcECRgO4B/wBPgJ9zkdKcvkclfRL/8ZtSTXH40N+GpLGF8zth6Q9Lse7DHCsDXxVJLSDLyQhb4B+Sb/VOVJJ6ATfKqGvrIDjDvCpJLjAz8d0JwmLDTBQAD62hIakiYJzm5a021VAfwn4WBLKwLdK2JUnIJP0XX4RSoIP/Hy8W3jeepv1dL3nmjwI3DLOExrAU2DA8zwb8xKhGeCuwYQtJTSAZwbwAHdcEqFM0mPZhO/foSHppdFcrraby2IDV0FCcPi8PCClhCjwLplgCgkrDeGv5I3pcjViSogK7yogloTo8EUEhJaQBL6oAGsJ9yVtkrRD0qsU8JKolagKZ8AD4ETFymFXgPOAQpXE5mMWOAk86XZ4n6pwlSSUhvcti1dBghe8RV8gpYQRX3irxkgKCSPABV94y85QTAlm8NatsRgSTOGBUnmAS57w3KiA0Ro3gHOW8KEEAOwE3hvfXWubFauu6A6vCND07OmW9viq5vpsGT3AtRAN2XoA+BfAwQBiTweoNpMZw48BRwKuAoPN7zNVWwZjwAfpO9S7DN5cQmYAPw4cTvAsYPJ3qHcpvNmdUO9ieBMJZQT0AhMVgfeWUC8BP87cjjHfuA6sATY0c4c0EgpUUHslvTaq3l5aUL1N1oarAnxSCVWBTyYhJvyw41XJJI3GkpAH/yYyfHQJi01gdUL4qBKqCh9NQrtBx4wGvGi0XS6T9MhoTkN5AtZVDN5awlTePsGfwDfPjGwYGDKu3s4Cp4BRz/N8cskED0iaqciVt7wTvkra5roKlJEQGt5HwhdJ24vmAUUkDEV+VyCT9NBxbp/bXXnXTNBFQmz4IhI6wrs+C+zvICEVvIuEKUlbrZ4G97WRkBq+k4RJSVusd4ntlfSheVudrQh8q4SbmntH6K2kzSF3if1Xsfzq7LKAJR5/BwCdAQBJn4egPgAAAABJRU5ErkJggg==) no-repeat;
+            background-size: 24px 24px
+        }
+
+        .mediabox-close:hover {
+            opacity: .5
+        }
+
+        @media all and (max-width:768px) {
+            .mediabox-content {
+                max-width: 90%
+            }
+        }
+
+        @media all and (max-width:600px) {
+            .mediabox-content iframe {
+                height: 320px !important
+            }
+
+            .mediabox-close {
+                bottom: 362px
+            }
+        }
+
+        @media all and (max-width:480px) {
+            .mediabox-content iframe {
+                height: 220px !important
+            }
+
+            .mediabox-close {
+                bottom: 262px
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-170261567-1');
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context":"http://schema.org",
+            "@type":"ItemList",
+            "itemListElement":[
+                {
+                    "@type":"SiteNavigationElement",
+                    "position":1,
+                    "name": "Themes",
+                    "description": "View BuildFaster's HTML themes and templates. Each can help you code your website faster.",
+                    "url":"https://www.buildfaster.co/themes.html"
+                },
+                {
+                    "@type":"SiteNavigationElement",
+                    "position":2,
+                    "name": "About",
+                    "description": "Learn more about why BuildFaster's HTML themes and templates will help you code a website faster.",
+                    "url":"https://www.buildfaster.co/about.html"
+                },
+                {
+                    "@type":"SiteNavigationElement",
+                    "position":3,
+                    "name": "Contact",
+                    "description": "Contact BuildFaster if you have any questions about our HTML themes and templates.",
+                    "url":"https://www.buildfaster.co/contact.html"
+                },
+                {
+                    "@type":"SiteNavigationElement",
+                    "position":4,
+                    "name": "Newsletter",
+                    "description": "A weekly newsletter about web design, awesome resources, updates on new theme releases, and great discounts!",
+                    "url":"https://buildfaster.substack.com/"
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body role="main">
+    <div class="all">
+        <div class="nav-bg"></div>
+        <div class="nav">
+            <div class="nav-left">
+                <div class="nav-link nav-logo">
+                    <!--
+                    <a href="index.html">
+                        <img src="images/buildfaster-text.jpg" alt="BuildFaster.co logo" height="100%">
+                    </a>
+                    -->
+                </div>
+                <div class="nav-links">
+                    <div class="nav-link nav-reg-link">
+                        <a href="#" class="ciao">
+                            <b><i class="fas fa-book"></i> BOOKLAND</b></a>
+                    </div>
+                    <div class="nav-link nav-reg-link">
+                        <a href="about.html"><i class="fas fa-info-circle"></i> Come Funziona</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <!-- <div class="nav-link nav-watcha">
+                <a href="https://fiddy.co/buildfaster.co?ref=fifty-badge" rel="noopener noreferrer" target="_blank"><img src="https://us-central1-fiftychar.cloudfunctions.net/badge?id=Bf3pyR89WVfiNfulJmlZ&score=all-time&mode=light" alt="BuildFaster - HTML themes made easy as pie. | Fifty Embed" height="50px"/></a>
+            </div> -->
+            </div>
+            <div class="nav-links-mob">
+                <div class="nav-link nav-reg-link">
+                    <a href="about.html"><i class="fas fa-info-circle"></i> Come funziona</a>
+                </div>
+                <!-- <div class="nav-link nav-reg-link">
+                <a href="https://fiddy.co/buildfaster.co?ref=fifty-badge" rel="noopener noreferrer" target="_blank"><img src="https://us-central1-fiftychar.cloudfunctions.net/badge?id=Bf3pyR89WVfiNfulJmlZ&score=all-time&mode=light" alt="BuildFaster - HTML themes made easy as pie. | Fifty Embed" height="50px"/></a>
+            </div> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="hero">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <div class="hero-title">
+                            <h1><i class="fas fa-book"></i> BOOKLAND</h1>
+                        </div>
+
+                        <div class="hero-para">
+                            <p>
+                                Libri <span style="white-space: nowrap;">scontati del 30, 40 e 50% !</span>
+                            </p>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="#">Scopri altri sconti &nbsp;<i class="fas fa-lock"></i></a>
+                            <!--fa-arrow-right-->
+                            <a href="about.html">Come funziona?
+                                &nbsp;<i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="hero-image">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="themes-section">
+                    <div class="themes-title">
+                        <h2>Scegli la tua lista</h2>
+                    </div>
+                    <div class="themes-deco">
+                        <div class="themes-deco4"></div>
+                        <div class="themes-deco5"></div>
+                    </div>
+                    <div class="themes-grid">
+                        <div class="themes-grid-item themes-item-ss">
+                            <a href="./productinfo/half_half.html" aria-label="Half-Half Theme">
+                            </a>
+                            <div class="themes-item-img"><a href="./productinfo/half_half.html"
+                                    aria-label="Half-Half Theme">
+                                    <img src="images/30%.png" alt="Half-Half thumbnail">
+                                </a><a href="/productinfo/half_half.html">
+                                </a>
+                                <div class="themes-hov"><a href="https://forms.gle/JhnD4BDaM2SKz6Fc7">
+                                        <div class="themes-hov-item">
+                                            <i class="fas fa-rocket"></i>
+                                            <br>
+                                            Invia richiesta
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="themes-item-title">
+                                <h3>Lista 30%</h3>
+                            </div>
+                            <div class="themes-item-para">
+                                <p>
+                                    Entra in lista per avere lo sconto del <b>30%</b> su tutti i libri che desideri fino
+                                    a fine scorte!
+                                </p>
+                            </div>
+                            <div class="themes-item-bottom">
+                                <div class="themes-price">FREE</div>
+                                <div class="themes-info">
+                                    <i class="fas fa-unlock-alt"> Unlocked</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="themes-grid-item themes-item-lb">
+                            <a href="./productinfo/simplyapp.html" aria-label="SimplyApp Theme">
+                            </a>
+                            <div class="themes-item-img"><a href="./productinfo/simplyapp.html"
+                                    aria-label="SimplyApp Theme">
+                                    <img src="images/40%.png" alt="SimplyApp thumbnail">
+                                </a><a href="/productinfo/simplyapp.html">
+                                </a>
+                                <div class="themes-hov"><!--<a href="">-->
+                                        <div class="themes-hov-item">
+                                            <i class="fas fa-rocket"></i>
+                                            <br>
+                                            Invia richiesta
+                                        </div>
+                                    <!--</a>-->
+                                </div>
+
+                            </div>
+
+
+                            <div class="themes-item-title">
+                                <h3>Lista 40%</h3>
+                            </div>
+                            <div class="themes-item-para">
+                                <p>
+                                    Entra in lista per avere lo sconto del <b>40%</b> su tutti i libri che desideri fino
+                                    a 150€!
+                                </p>
+                            </div>
+                            <div class="themes-item-bottom">
+                                <div class="themes-price">€15</div>
+                                <div class="themes-info">
+                                    <i class="fas fa-lock"> Lock</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="themes-grid-item themes-item-lb">
+                            <a href="./productinfo/lightning_blue.html" aria-label="Lightning Blue Theme">
+                            </a>
+                            <div class="themes-item-img"><a href="./productinfo/lightning_blue.html"
+                                    aria-label="Lightning Blue Theme">
+                                    <img src="images/50%.png" alt="Lightning Blue thumbnail">
+                                </a><a href="/productinfo/lightning_blue.html">
+                                </a>
+                                <div class="themes-hov"><!--<a href="" aria-disabled="false">-->
+                                        <div class="themes-hov-item">
+                                            <i class="fas fa-rocket"></i>
+                                            <br>
+                                            Invia richiesta
+                                        </div>
+                                    <!--</a>-->
+                                </div>
+
+                            </div>
+
+                            <div class="themes-item-title">
+                                <h3>Lista 50%</h3>
+                            </div>
+                            <div class="themes-item-para">
+                                <p>
+                                    Entra in lista per avere lo sconto del <b>50%</b> su tutti i libri che desideri fino
+                                    a fine scorte!
+                                </p>
+                            </div>
+                            <div class="themes-item-bottom">
+                                <div class="themes-price">€40</div>
+                                <div class="themes-info">
+                                    <i class="fas fa-window-close"> Sold-out</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="themes-cta">
+                        <a href="#">Visita il nostro universo &nbsp;<i class="fas fa-lock"></i></a>
+                    </div>
+                </div>
+                <div class="why-section">
+                    <div class="why-text">
+                        <div class="why-title">
+                            <h2>
+                                Cultura per Tutti: Libri Accessibili Senza Compromessi
+                            </h2>
+                        </div>
+                        <div class="why-para">
+                            <p>
+
+                                Crediamo fermamente che la lettura non debba essere un privilegio per pochi.
+                            </p>
+                            <br>
+                            <p>
+                                Studiare a scuola deve essere accessibile a tutti, senza pesare troppo sulle famiglie. Abbiamo creato questa iniziativa proprio perché siamo consapevoli di quanto possano essere costosi i libri.
+                            </p>
+                            <br>
+                            <p>
+                                Ma ehi! Anche tu, lettore occasionale o appassionato divoratore di libri, puoi usufruire del nostro servizio!
+                            </p>
+                            <br>
+                            <p>
+                                <b>Quindi, cosa aspetti? Risparmia sui libri scolastici o soddisfa la tua sete di lettura!</b>
+                            </p>
+                        </div>
+                        <div class="why-cta">
+                            <a href="">ESPLORA IL NOSTRO UNIVERSO! &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-section">
+                    <div class="testimonial-title">
+                        <h2>Informazioni importanti</h2>
+                    </div>
+                    <div class="testimonial-inner">
+                        <div class="testimonial-group">
+                            <div class="testimonial-img" style="background-image: url(images/num3.png)">
+
+                            </div>
+                            <div class="testimonial-flex">
+                                <div class="testimonial-quote">
+                                    <p>
+                                        Le risorse disponibili potrebbero finire prima di servire tutti gli iscritti alla lista (Seguiremo l'ordine delle richieste).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-group">
+                            <div class="testimonial-img" style="background-image: url(images/num1.png)">
+
+                            </div>
+                            <div class="testimonial-flex">
+                                <div class="testimonial-quote">
+                                    <p>
+                                        Le liste con la % più alta hanno la priorità su le % più basse.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-group">
+                            <div class="testimonial-img" style="background-image: url(images/num2.png)">
+
+                            </div>
+                            <div class="testimonial-flex">
+                                <div class="testimonial-quote">
+                                    <p>
+                                        Chiediamo la tua email solo per inviarti il link al gruppo Telegram. Se non possiedi Telegram potrebbe essere il momento giusto per scaricarlo!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-section" data-aos="fade-up">
+                    <div class="newsletter-flex">
+                        <div class="newsletter-text">
+                            <h3>
+                                Iscriviti alla newsletter!
+                            </h3>
+                        </div>
+                        <div class="newsletter-sign">
+                            <form name="emailsignup" netlify="">
+                                <input type="email" name="email" placeholder="Email">
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="extra-inner">
+                        <div class="extra-deco4"></div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-text">
+                        <div class="footer-logo">
+                            <h1><i class="fas fa-book"></i> BOOKLAND</h1>
+                        </div>
+                        <div class="footer-links">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">Come Funziona</a>
+                            <a href="https://forms.gle/hbrTBd4BtfafErqJA">Contattaci</a>
+                        </div>
+                        <br>
+                        <div class="footer-links">
+                            <a class="footer-aff" href=""
+                                rel="noopener noreferrer nofollow" target="_blank">Become an Affiliate 👈</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/nav.js"></script>
+    <!-- <script async defer src="https://cdn.boei.help/hello.js"></script> -->
+    <!-- <script src="//code.tidio.co/lziy0u6o2kroqapm1xk9v9twuhjorgxs.js" async></script> -->
+    <script src="js/gumroad.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        !function (root, factory) { "use strict"; "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? module.exports = factory() : root.MediaBox = factory() }(this, (function () { "use strict"; var MediaBox = function (element, params) { var default_params = { autoplay: "1" }, params = params || 0; return this && this instanceof MediaBox ? !!element && (this.params = Object.assign(default_params, params), this.selector = element instanceof NodeList ? element : document.querySelectorAll(element), this.root = document.querySelector("body"), void this.run()) : new MediaBox(element, params) }; return MediaBox.prototype = { run: function () { Array.prototype.forEach.call(this.selector, function (el) { el.addEventListener("click", function (e) { e.preventDefault(); var link = this.parseUrl(el.getAttribute("href")); this.render(link), this.events() }.bind(this), !1) }.bind(this)), this.root.addEventListener("keyup", function (e) { 27 === (e.keyCode || e.which) && this.close(this.root.querySelector(".mediabox-wrap")) }.bind(this), !1) }, template: function (s, d) { var p; for (p in d) d.hasOwnProperty(p) && (s = s.replace(new RegExp("{" + p + "}", "g"), d[p])); return s }, parseUrl: function (url) { var service = {}, matches; return (matches = url.match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/)) ? (service.provider = "youtube", service.id = matches[2]) : (matches = url.match(/https?:\/\/(?:www\.)?vimeo.com\/(?:channels\/|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/)) ? (service.provider = "vimeo", service.id = matches[3]) : (service.provider = "Unknown", service.id = ""), service }, render: function (service) { var embedLink, lightbox, urlParams; if ("youtube" === service.provider) embedLink = "https://www.youtube.com/embed/" + service.id; else { if ("vimeo" !== service.provider) throw new Error("Invalid video URL"); embedLink = "https://player.vimeo.com/video/" + service.id } urlParams = this.serialize(this.params), lightbox = this.template('<div class="mediabox-wrap" role="dialog" aria-hidden="false"><div class="mediabox-content" role="document" tabindex="0"><span id="mediabox-esc" class="mediabox-close" aria-label="close" tabindex="1"></span><iframe src="{embed}{params}" frameborder="0" allowfullscreen></iframe></div></div>', { embed: embedLink, params: urlParams }), this.lastFocusElement = document.activeElement, this.root.insertAdjacentHTML("beforeend", lightbox), document.body.classList.add("stop-scroll") }, events: function () { var wrapper = document.querySelector(".mediabox-wrap"), content = document.querySelector(".mediabox-content"); wrapper.addEventListener("click", function (e) { (e.target && "SPAN" === e.target.nodeName && "mediabox-close" === e.target.className || "DIV" === e.target.nodeName && "mediabox-wrap" === e.target.className || "mediabox-content" === e.target.className && "IFRAME" !== e.target.nodeName) && this.close(wrapper) }.bind(this), !1), document.addEventListener("focus", (function (e) { content && !content.contains(e.target) && (e.stopPropagation(), content.focus()) }), !0), content.addEventListener("keypress", function (e) { 13 === e.keyCode && this.close(wrapper) }.bind(this), !1) }, close: function (el) { if (null === el) return !0; var timer = null; timer && clearTimeout(timer), el.classList.add("mediabox-hide"), timer = setTimeout(function () { var el = document.querySelector(".mediabox-wrap"); null !== el && (document.body.classList.remove("stop-scroll"), this.root.removeChild(el), this.lastFocusElement.focus()) }.bind(this), 500) }, serialize: function (obj) { return "?" + Object.keys(obj).reduce((function (a, k) { return a.push(k + "=" + encodeURIComponent(obj[k])), a }), []).join("&") } }, MediaBox })), "function" != typeof Object.assign && Object.defineProperty(Object, "assign", { value: function assign(target, varArgs) { "use strict"; if (null == target) throw new TypeError("Cannot convert undefined or null to object"); for (var to = Object(target), index = 1; index < arguments.length; index++) { var nextSource = arguments[index]; if (null != nextSource) for (var nextKey in nextSource) Object.prototype.hasOwnProperty.call(nextSource, nextKey) && (to[nextKey] = nextSource[nextKey]) } return to }, writable: !0, configurable: !0 });
+    </script>
+    <script>
+        MediaBox('.mediabox');
+        AOS.init({
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
